@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#B9D6F2"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/charcter_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/id_name"
+        android:layout_width="280dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Name"
+        android:textSize="25dp"
+        android:textColor="#061A40"
+        app:layout_constraintStart_toEndOf="@+id/charcter_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_description"
+        android:layout_width="279dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#0353A4"
+        android:text="TextView"
+        android:textColor="#B9D6F2"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/charcter_image"
+        app:layout_constraintTop_toBottomOf="@+id/id_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

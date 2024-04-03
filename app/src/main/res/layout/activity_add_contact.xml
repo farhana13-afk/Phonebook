@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0353A4"
+    tools:context=".AddContact">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ADD NEW CONTACT"
+        android:textColor="#B9D6F2"
+        android:textSize="35dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#B9D6F2"
+            android:layout_weight="1"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#B9D6F2"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#B9D6F2"
+            android:layout_weight="1"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#B9D6F2"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Description" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#B9D6F2"
+            android:layout_weight="1"
+            android:text="Universe" />
+
+        <EditText
+            android:id="@+id/editUniverse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#B9D6F2"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Universe" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Favorites"
+            android:textColor="#B9D6F2" />
+
+        <EditText
+            android:id="@+id/editSaying"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Favorites"
+            android:textColor="#B9D6F2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#B9D6F2"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Email"
+            android:textColor="#B9D6F2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#B9D6F2"
+            android:text="Phone Number" />
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="text"
+            android:text="PhoneNumber"
+            android:textColor="#B9D6F2" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/addButtonLol"
+            android:layout_width="99dp"
+            android:layout_height="59dp"
+            android:background="@android:color/black"
+            android:onClick="OnClickAdd"
+            android:text="Add!"
+            android:textColor="#B9D6F2"
+            app:backgroundTint="#003559"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.167" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
